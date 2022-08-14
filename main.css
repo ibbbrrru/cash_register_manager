@@ -1,0 +1,85 @@
+.container {
+    background-image: url("../732352.jpg");
+    /* background-repeat: no-repeat;
+    background-size: cover;*/
+    /* first background image good in laptop but not in mobile. */
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: fixed;
+    display: flex;
+    flex-direction: column;
+    width: 50vw;
+    display: block;
+    margin: 0px;
+    margin-top: 0px;
+    margin-right: 0px;
+    margin-bottom: 0px;
+    margin-left: 0px;
+}
+
+.heading {}
+
+.description {
+    padding: 1rem 0rem;
+    text-align: center;
+    color: black;
+}
+
+#bill-amount {
+    display: block;
+    width: 80%;
+    height: 1vh;
+    max-width: 600px;
+    margin: auto;
+    padding: 0.8rem;
+    border-radius: 0.5rem;
+}
+
+#cash-given {
+    display: block;
+    width: 80%;
+    height: 1vh;
+    max-width: 600px;
+    margin: auto;
+    padding: 0.8rem;
+    border-radius: 0.5rem;
+}
+.label{
+    text-align: center;
+}
+
+
+#check-button {
+    font-family: 'BIZ UDPMincho', serif;
+    background-color: #a3e635;
+    text-decoration: none;
+    padding: 0.5rem 1rem;
+    border-radius: 0.5rem;
+    color: black;
+    font-weight: bold;
+
+
+}
+
+#error-message {
+    padding: 1rem 0rem;
+    text-align: center;
+    color: black;
+}
+
+#balanct-to-give {
+    padding: 1rem 0rem;
+    text-align: center;
+    color: black;
+}
+
+.change-table {
+    display: block;
+    border: 1px;
+    width: 80%;
+    height: 0vh;
+    max-width: 600px;
+    margin: auto;
+    padding: 0.8rem;
+}
+
