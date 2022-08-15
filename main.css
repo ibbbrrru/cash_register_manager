@@ -7,8 +7,8 @@
     flex-direction: column;
 }
 body{
-    background: url("732352.jpg") no-repeat scroll;
-    background-size: cover;
+    background: url("crm.jpg") scroll;
+    background-size: fixed;
     text-align: center;
 }
 
