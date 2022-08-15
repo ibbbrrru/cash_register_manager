@@ -2,7 +2,6 @@ const billAmount = document.querySelector("#bill-amount");
 const cashGiven = document.querySelector("#cash-given");
 const checkButton = document.querySelector("#check-button");
 const message = document.querySelector("#error-message");
-const balanceToGive = document.querySelector("#balance-to-give");
 const noOfNotes = document.querySelectorAll(".no-of-notes"); // we can't access multiple elements in id. so, here through this class we can access that table in the form of array
 const availableNotes = [2000,500,200,100,50,20,10,5,2,1];
 
@@ -11,16 +10,9 @@ checkButton.addEventListener("click", function validateBillAndCashAmount() {
     //message.style.display="none";
     hideMessage();
     if (billAmount.value > 0) {
-        console.log('cashGiven',typeof(cashGiven.value))
-        console.log('billAmount',typeof(billAmount.value))
-        console.log('cashGiven.value >= billAmount.value',cashGiven.value >= billAmount.value)
         if (Number(cashGiven.value) >= Number(billAmount.value)) {
             var amountToBeReturned = Number(cashGiven.value) - Number(billAmount.value);
-            console.log('amountToBeReturned',amountToBeReturned)
-            balanceToGive.innerText = "Balance to give: " + amountToBeReturned + " ₹";
-
-
-
+            showMessage("Balance to give: " + amountToBeReturned + " ₹");
             calculateChange(amountToBeReturned);
         } else {
             showMessage("Cash provided should be atleast equal to bill amount");
