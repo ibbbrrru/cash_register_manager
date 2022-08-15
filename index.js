@@ -11,6 +11,8 @@ checkButton.addEventListener("click", function validateBillAndCashAmount() {
     //message.style.display="none";
     hideMessage();
     if (billAmount.value > 0) {
+        console.log('cashGiven',cashGiven.value)
+        console.log('billAmt',billAmount.value)
         if (cashGiven.value >= billAmount.value) {
             const amountToBeReturned = cashGiven.value - billAmount.value;
             balanceToGive.innerText = "Balance to give: " + amountToBeReturned + " ₹";
