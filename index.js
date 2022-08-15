@@ -11,11 +11,16 @@ checkButton.addEventListener("click", function validateBillAndCashAmount() {
     //message.style.display="none";
     hideMessage();
     if (billAmount.value > 0) {
-        console.log('cashGiven',cashGiven.value)
-        console.log('billAmt',billAmount.value)
-        if (cashGiven.value >= billAmount.value) {
-            const amountToBeReturned = cashGiven.value - billAmount.value;
+        console.log('cashGiven',typeof(cashGiven.value))
+        console.log('billAmount',typeof(billAmount.value))
+        console.log('cashGiven.value >= billAmount.value',cashGiven.value >= billAmount.value)
+        if (Number(cashGiven.value) >= Number(billAmount.value)) {
+            var amountToBeReturned = Number(cashGiven.value) - Number(billAmount.value);
+            console.log('amountToBeReturned',amountToBeReturned)
             balanceToGive.innerText = "Balance to give: " + amountToBeReturned + " ₹";
+
+
+
             calculateChange(amountToBeReturned);
         } else {
             showMessage("Cash provided should be atleast equal to bill amount");
@@ -33,6 +38,7 @@ function calculateChange(amountToBeReturned) {
         noOfNotes[i].innerText = numberOfNotes;
     }
 }
+
 
 function showMessage(msg) {
     message.style.display = "block";

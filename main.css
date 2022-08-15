@@ -1,43 +1,41 @@
 .container {
-    background-image: url("../732352.jpg");
+    /* background-image: url("../732352.jpg" ); */
     /* background-repeat: no-repeat;
     background-size: cover;*/
     /* first background image good in laptop but not in mobile. */
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: fixed;
     display: flex;
     flex-direction: column;
-    width: 50vw;
-    display: block;
-    margin: 0px;
-    margin-top: 0px;
-    margin-right: 0px;
-    margin-bottom: 0px;
-    margin-left: 0px;
+}
+body{
+    background: url("732352.jpg") no-repeat scroll;
+    background-size: cover;
+    text-align: center;
 }
 
-.heading {}
 
 .description {
     padding: 1rem 0rem;
     text-align: center;
     color: black;
+    font-weight: bolder;
+    font-size: larger
 }
 
 #bill-amount {
     display: block;
-    width: 80%;
+    width: 30%;
     height: 1vh;
     max-width: 600px;
     margin: auto;
     padding: 0.8rem;
     border-radius: 0.5rem;
 }
-
+#bill-amount:hover,#cash-given:hover{
+background-color:#a3e635 ;
+}
 #cash-given {
     display: block;
-    width: 80%;
+    width: 30%;
     height: 1vh;
     max-width: 600px;
     margin: auto;
@@ -47,18 +45,40 @@
 .label{
     text-align: center;
 }
-
+#check-button:hover{
+background-color:aqua ;
+}
 
 #check-button {
+    display: block;
     font-family: 'BIZ UDPMincho', serif;
+    width: 20%;
     background-color: #a3e635;
     text-decoration: none;
     padding: 0.5rem 1rem;
     border-radius: 0.5rem;
     color: black;
     font-weight: bold;
+    max-width: 600px;
+    margin: auto;
 
 
+}
+
+textarea{
+    font-family: 'BIZ UDPMincho', serif;
+    width: 80%;
+    background-color: #9fb1c2;
+    text-decoration: none;
+    padding: 0.5rem 1rem;
+    border-radius: 0.5rem;
+    color: black;
+    font-weight: bold;
+    max-width: 600px;
+    margin: auto;
+    padding: 1rem 0rem;
+    text-align: center;
+    color: black;
 }
 
 #error-message {
@@ -67,19 +87,11 @@
     color: black;
 }
 
-#balanct-to-give {
-    padding: 1rem 0rem;
-    text-align: center;
-    color: black;
-}
-
-.change-table {
-    display: block;
-    border: 1px;
-    width: 80%;
-    height: 0vh;
-    max-width: 600px;
+table,th,td{
+    border: 1px solid black;
     margin: auto;
-    padding: 0.8rem;
+    text-align: center;
 }
-
+table{
+    width: 50%;
+}
