@@ -9,9 +9,12 @@
 
 body {
     background: url("crm.jpg") scroll;
-    background-size: fixed;
+    background-size: cover;
+    background-repeat: no-repeat;
     text-align: center;
     background-position: center;
+    background-attachment: fixed;
+    height: 100%;
 }
 
 p:hover,
