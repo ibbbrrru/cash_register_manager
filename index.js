@@ -12,6 +12,8 @@ checkButton.addEventListener("click", function validateBillAndCashAmount() {
     if (billAmount.value > 0) {
         if (Number(cashGiven.value) >= Number(billAmount.value)) {
             var amountToBeReturned = Number(cashGiven.value) - Number(billAmount.value);
+            console.log('atbr',typeof amountToBeReturned)
+            console.log('atbr',amountToBeReturned)
             showMessage("Balance to give: " + amountToBeReturned + " ₹");
             calculateChange(amountToBeReturned);
         } else {
